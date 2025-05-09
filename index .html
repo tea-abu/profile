@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阿布的個人茶頁</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+  <header class="bg-blue-200 p-6 text-center shadow">
+    <h1 class="text-3xl font-bold text-blue-900">阿布古树茶 / Abu Ancient Tree Tea</h1>
+    <p class="text-sm">云南西双版纳勐海县 | Yunnan Xishuangbanna Menghai County</p>
+  </header>
+
+  <nav class="bg-blue-100 shadow">
+    <ul class="flex justify-center space-x-4 p-4 text-blue-800 font-semibold">
+      <li><a href="#home" onclick="showPage('home')">首页 / Home</a></li>
+      <li><a href="#about" onclick="showPage('about')">自我介绍 / About</a></li>
+      <li><a href="#products" onclick="showPage('products')">茶成品专集 / Tea Products</a></li>
+      <li><a href="#videos" onclick="showPage('videos')">茶专集视频 / Tea Videos</a></li>
+      <li><a href="#contact" onclick="showPage('contact')">联系方式 / Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="p-6">
+      <img src="avatar.jpg" alt="阿布头像" class="rounded-full w-32 h-32 mx-auto">
+      <h2 class="text-center mt-4 text-xl font-bold text-blue-800">欢迎来到我的茶世界 / Welcome to My Tea World</h2>
+    </section>
+
+    <section id="about" class="p-6 hidden">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-700">自我介绍 / About Me</h2>
+      <p class="leading-relaxed">
+        我叫阿布，出生并成长于云南西双版纳的勐海县。自小便浸润于茶香之间，熟悉采普洱茶、制茶、品茶与分享的全过程。
+        以古树茶原生态为核心理念，我坚持传统手工技艺，追求天然纯净的风味。
+        每一泡茶都承载着山林的气息与时光的温度，愿与更多喜爱茶文化的朋友共品此味、共赏此情。
+      </p>
+      <p class="mt-2 italic">
+        My name is Abu, born and raised in Menghai, Xishuangbanna, Yunnan. From picking Pu-erh tea to processing, tasting, and sharing, I’ve immersed myself in tea since childhood.
+        I focus on ecological ancient tree tea, insisting on traditional handcrafting and pure natural taste.
+        Every sip carries the fragrance of the forest and the warmth of time. Let’s enjoy tea together.
+      </p>
+    </section>
+
+    <section id="products" class="p-6 hidden">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4 text-blue-700">茶成品专集 / Tea Product Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- 27 茶图照片 -->
+        <!-- 茶图将自动嵌入，格式略 -->
+        <!-- 示例： -->
+        <img src="tea1.jpg" alt="产品1 Product 1" class="rounded shadow">
+        <img src="tea2.jpg" alt="产品2 Product 2" class="rounded shadow">
+        <img src="tea3.jpg" alt="产品2 Product 3" class="rounded shadow">
+        <img src="tea4.jpg" alt="产品1 Product4" class="rounded shadow">
+        <img src="tea5.jpg" alt="产品2 Product 5" class="rounded shadow">
+        <img src="tea6.jpg" alt="产品2 Product 6" class="rounded shadow">
+        <img src="tea7.jpg" alt="产品1 Product 7" class="rounded shadow">
+        <img src="tea8.jpg" alt="产品2 Product 8" class="rounded shadow">
+        <img src="tea9.jpg" alt="产品2 Product 9" class="rounded shadow">
+        <img src="tea10.jpg" alt="产品1 Product10" class="rounded shadow">
+        <img src="tea11.jpg" alt="产品2 Product 11" class="rounded shadow">
+        <img src="tea12.jpg" alt="产品2 Product12" class="rounded shadow">
+        <img src="tea13.jpg" alt="产品1 Product13" class="rounded shadow">
+        <img src="tea14.jpg" alt="产品2 Product 14" class="rounded shadow">
+        <img src="tea15.jpg" alt="产品2 Product15" class="rounded shadow">
+        <img src="tea16.jpg" alt="产品1 Product16" class="rounded shadow">
+        <img src="tea17.jpg" alt="产品2 Product 17" class="rounded shadow">
+        <img src="tea18.jpg" alt="产品2 Product18" class="rounded shadow">
+        <img src="tea19.jpg" alt="产品1 Product19" class="rounded shadow">
+        <img src="tea20.jpg" alt="产品2 Product 20" class="rounded shadow">
+        <img src="tea21.jpg" alt="产品2 Product21" class="rounded shadow">
+        <img src="tea22.jpg" alt="产品2 Product15" class="rounded shadow">
+        <img src="tea23.jpg" alt="产品1 Product16" class="rounded shadow">
+        <img src="tea24.jpg" alt="产品2 Product 17" class="rounded shadow">
+        <img src="tea25.jpg" alt="产品2 Product18" class="rounded shadow">
+        <img src="tea26.jpg" alt="产品1 Product19" class="rounded shadow">
+        <img src="tea27.jpg" alt="产品2 Product 20" class="rounded shadow">
+        <img src="tea28.jpg" alt="产品2 Product21" class="rounded shadow">
+            </div>
+    </section>
+
+    <section id="videos" class="p-6 hidden">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4 text-blue-700">茶专集视频 / Tea Video Collection</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <video controls class="rounded shadow">
+          <source src="video1.mp4" type="video/mp4">您的浏览器不支持播放。
+        </video>
+        <video controls class="rounded shadow">
+          <source src="video2.mp4" type="video/mp4">您的浏览器不支持播放。
+        </video>
+        <video controls class="rounded shadow">
+          <source src="video3.mp4" type="video/mp4">您的浏览器不支持播放。
+        </video>
+        <video controls class="rounded shadow">
+          <source src="video4.mp4" type="video/mp4">您的浏览器不支持播放。
+        </video>
+        <video controls class="rounded shadow">
+          <source src="video5.mp4" type="video/mp4">您的浏览器不支持播放。
+        </video>
+        <video controls class="rounded shadow">
+          <source src="video6.mp4" type="video/mp4">您的浏览器不支持播放。
+        </video>
+        <video controls class="rounded shadow">
+          <source src="video7.mp4" type="video/mp4">您的浏览器不支持播放。
+        </video>
+      </div>
+    </section>
+
+    <section id="contact" class="p-6 hidden">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-700">联系方式 / Contact</h2>
+      <p><strong>姓名 / Name：</strong> 阿布 / Abu</p>
+      <p><strong>电话 / Phone：</strong> 13682526768</p>
+      <p><strong>微信号 / WeChat：</strong> zhangjianqin141319</p>
+    </section>
+  </main>
+
+  <footer class="text-center p-4 text-sm text-gray-600 border-t mt-6">
+    © 2025 阿布古树茶 Abu Ancient Tree Tea. 保留所有权利 All rights reserved.
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
+
