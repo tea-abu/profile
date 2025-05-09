@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>阿布的普洱茶世界 | Abu's Pu'er Tea World</title>
+  <style>
+    body { font-family: 'Microsoft YaHei', sans-serif; margin: 0; background: #f6f8fb; }
+    header { background: #2a4f6e; color: white; padding: 1.5em; text-align: center; }
+    nav ul { display: flex; justify-content: center; background: #3a6ba5; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+    nav li { margin: 0 1em; }
+    nav a { color: white; text-decoration: none; display: block; padding: 1em; }
+    nav a:hover { background: #254569; }
+    section { display: none; padding: 2em; max-width: 900px; margin: auto; background: white; }
+    section.active { display: block; }
+    img.avatar { width: 160px; height: 160px; border-radius: 50%; display: block; margin: 1em auto; object-fit: cover; }
+    h2 { color: #2a4f6e; border-bottom: 2px solid #ccc; padding-bottom: 0.3em; }
+    .contact { text-align: center; font-size: 1.1em; margin-top: 2em; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; }
+    .gallery img { max-width: 280px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .video-frame { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em; }
+    video { max-width: 280px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>阿布的普洱茶世界<br><span style="font-size: 0.6em;">Abu's Pu'er Tea World</span></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showPage('home')">首页 / Home</a></li>
+      <li><a href="#" onclick="showPage('about')">自我介绍 / About Me</a></li>
+      <li><a href="#" onclick="showPage('products')">茶成品专集 / Tea Products</a></li>
+      <li><a href="#" onclick="showPage('videos')">茶专集视频 / Tea Videos</a></li>
+      <li><a href="#" onclick="showPage('contact')">联系方式 / Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="active">
+    <img src="微信图片_20250509085605.jpg" alt="阿布头像 / Abu Avatar" class="avatar">
+    <p style="text-align: center; font-size: 1.2em;">欢迎来到我的普洱茶世界 — 品味自然，分享古树茶的香气与故事。<br>
+    Welcome to my Pu'er tea world – taste nature and share the aroma and story of ancient tree tea.</p>
+  </section>
+
+  <section id="about">
+    <h2>自我介绍 / About Me</h2>
+    <p>
+      我是阿布，出生并成长于云南西双版纳勐海县，这是一个拥有深厚茶文化的地方。茶是我生命中不可或缺的一部分。从小便跟随家人上山采茶，学习制茶工艺，从采摘、杀青、揉捻、晒干，每一个步骤我都亲力亲为，充满敬畏之心。成年后我选择将这份热爱延续，深入古树茶领域，专注于原生态普洱茶的推广。
+      <br><br>
+      我的愿景是通过分享，让更多人理解什么是真正的古树茶，它的自然之味、文化之魂、与土地的深度连接。我希望把最纯粹的茶带到更多朋友的杯中。
+      <br><br>
+      I'm Abu, born and raised in Menghai County, Xishuangbanna, Yunnan – a place rich in tea culture. Tea is an inseparable part of my life. From childhood, I followed my family into the mountains to pick tea and learn the art of making it. I’ve done every step by hand – plucking, pan-firing, rolling, and sun-drying – with deep respect. As an adult, I dedicated myself to ancient tree tea and the promotion of ecological Pu’er.
+      <br><br>
+      My mission is to share and let more people truly understand what ancient tree tea is – its pure taste, cultural soul, and deep connection to the land. I aim to bring the most authentic tea into every friend’s cup.
+    </p>
+  </section>
+
+  <section id="products">
+    <h2>茶成品专集 / Tea Products</h2>
+    <div class="gallery">
+      <!-- 茶品图 1~25 -->
+      <!-- 用 JS 快速生成也可以，但此处手写列出 -->
+      ${Array.from({length: 25}, (_, i) => `<img src="tea${i+1}.jpg" alt="产品${i+1} / Product ${i+1}">`).join('\n')}
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>茶专集视频 / Tea Videos</h2>
+    <div class="video-frame">
+      ${Array.from({length: 10}, (_, i) => `
+      <video controls>
+        <source src="video${i+1}.mp4" type="video/mp4">
+        您的浏览器不支持视频播放 / Your browser does not support video playback.
+      </video>`).join('\n')}
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系方式 / Contact</h2>
+    <div class="contact">
+      <p>姓名：阿布 / Name: Abu</p>
+      <p>电话：13682526768 / Phone: 13682526768</p>
+      <p>微信号：zhangjianqin141319 / WeChat ID: zhangjianqin141319</p>
+    </div>
+  </section>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
