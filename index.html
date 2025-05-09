@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阿布古树茶</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <header class="bg-blue-100 text-center p-6 shadow">
+    <h1 class="text-3xl font-bold text-blue-800">阿布古树茶</h1>
+    <p class="text-sm text-gray-600">云南西双版纳勐海县 - 采茶・制茶・品茶</p>
+  </header>
+
+  <!-- 茶成品专集 -->
+  <section id="products" class="px-4 py-8">
+    <h2 class="text-2xl font-semibold border-b pb-2 mb-4 text-blue-700">茶成品专集 / Tea Products</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <!-- 茶图循环输出 -->
+      <!-- 以下列出图片 tea1.jpg 至 tea27.jpg -->
+      <!-- 示例 -->
+      <img src="tea1.jpg" alt="产品1" class="rounded shadow">
+      <img src="tea2.jpg" alt="产品2" class="rounded shadow">
+      <!-- 其餘圖請依照此格式添加至 tea27.jpg 為止 -->
+    </div>
+  </section>
+
+  <!-- 茶视频专集 -->
+  <section id="videos" class="px-4 py-8">
+    <h2 class="text-2xl font-semibold border-b pb-2 mb-4 text-blue-700">茶专集视频 / Tea Videos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- 茶影片嵌入 -->
+      <video controls class="rounded shadow">
+        <source src="video1.mp4" type="video/mp4">
+        您的浏览器不支持视频播放。
+      </video>
+      <video controls class="rounded shadow">
+        <source src="video2.mp4" type="video/mp4">
+        您的浏览器不支持视频播放。
+      </video>
+      <!-- 持续添加至 video7.mp4 -->
+    </div>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-4 border-t mt-6">
+    © 2025 阿布古树茶 - 微信号: zhangjianqin141319 - 电话: 13682526768
+  </footer>
+</body>
+</html>
